@@ -1,0 +1,817 @@
+/*  ================================
+        global area start
+    ================================ */
+
+body {
+    font-size: 14px !important;
+    font-weight: 400;
+    line-height: 1.6;
+    font-family: 'Open Sans', sans-serif;
+    color: #1a1a1a;
+}
+
+a,
+a:hover,
+a:focus {
+    outline: none;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+a {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+span {
+    font-size: 14px;
+}
+
+.main-div {
+    overflow: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*  ================================
+        global area end
+    ================================ */
+
+/*  ================================
+        Header area start
+    ================================ */
+
+.main-div {
+    background: rgba(0, 0, 0, 0) url("../img/background.jpg") repeat;
+}
+
+.header-area {
+    padding: 30px 0;
+    height: 400px;
+    position: relative;
+    background: url('../img/banner.jpg') no-repeat center center / cover;
+}
+
+.header-area::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.70);
+    content: "";
+}
+
+.logo {
+    display: inline-block;
+    padding: 35px;
+    text-align: center;
+    position: relative;
+    float: right;
+    z-index: 10;
+    margin-bottom: 5px;
+    border: 3px solid #00317D;
+    transform: rotate(0deg) scale(1.003) skew(-26deg) translate(0px);
+    -webkit-transform: rotate(0deg) scale(1.003) skew(-26deg) translate(0px);
+    -moz-transform: rotate(0deg) scale(1.003) skew(-26deg) translate(0px);
+    -o-transform: rotate(0deg) scale(1.003) skew(-26deg) translate(0px);
+    -ms-transform: rotate(0deg) scale(1.003) skew(-26deg) translate(0px);
+    padding-right: 46px;
+}
+
+.logo::after {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.6);
+    content: "";
+    display: block;
+    height: 36px;
+    left: 3px;
+    position: absolute;
+    bottom: -25px;
+    width: 120px;
+    z-index: 777;
+    transform: rotate(0deg) scale(1.003) skew(-14deg) translate(0px);
+    -webkit-transform: rotate(0deg) scale(1.003) skew(-14deg) translate(0px);
+    -moz-transform: rotate(0deg) scale(1.003) skew(-14deg) translate(0px);
+    -o-transform: rotate(0deg) scale(1.003) skew(-14deg) translate(0px);
+    -ms-transform: rotate(0deg) scale(1.003) skew(-14deg) translate(0px);
+}
+
+.logo a {
+    display: block;
+    transform-style: flat;
+    -webkit-transform-style: flat;
+    -moz-transform-style: flat;
+    -ms-transform-style: flat;
+    transform: rotate(0deg) scale(1.003) skew(26deg) translate(0px);
+    -webkit-transform: rotate(0deg) scale(1.003) skew(26deg) translate(0px);
+    -moz-transform: rotate(0deg) scale(1.003) skew(26deg) translate(0px);
+    -o-transform: rotate(0deg) scale(1.003) skew(26deg) translate(0px);
+    -ms-transform: rotate(0deg) scale(1.003) skew(26deg) translate(0px);
+}
+
+.logo img {
+    width: 100px;
+}
+
+/******** menu part start ********/
+
+#menu-switcher,
+.navbar-header > label,
+.switch {
+    display: none;
+}
+
+.menu-container label::before {
+    border-bottom: 2px solid #fff;
+    box-shadow: 0 5px 0 0 #fff, 0 0 0 0 inset, 0 -5px 0 0 #fff;
+    content: "";
+    height: 0;
+    left: 50%;
+    margin-left: -10px;
+    margin-top: -1px;
+    position: absolute;
+    top: 50%;
+    width: 20px;
+}
+
+.switch {
+    width: 100%;
+    float: left;
+    height: auto;
+    min-height: 45px;
+    position: relative;
+}
+
+.menu-container label {
+    background-color: #00317D !important;
+    cursor: pointer;
+    display: none;
+    height: 35px;
+    padding: 0;
+    position: absolute !important;
+    right: 0;
+    top: 4px;
+    width: 40px;
+    z-index: 9999;
+    border: 1px solid #00317D;
+}
+
+.header-top-menu {
+    min-height: 0;
+    margin-bottom: 0;
+    border: 0;
+}
+
+.header-top-menu ul,
+.navbar ul {
+    width: auto;
+    text-align: center;
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.8);
+    margin-top: -10px;
+    position: relative;
+    display: inline-block;
+    left: 10px;
+    top: 15px;
+    z-index: 14;
+    transform: rotate(0deg) scale(1.003) skew(-26deg) translate(0px);
+    -webkit-transform: rotate(0deg) scale(1.003) skew(-26deg) translate(0px);
+    -moz-transform: rotate(0deg) scale(1.003) skew(-26deg) translate(0px);
+    -o-transform: rotate(0deg) scale(1.003) skew(-26deg) translate(0px);
+    -ms-transform: rotate(0deg) scale(1.003) skew(-26deg) translate(0px);
+    transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.header-top-menu ul::before {
+    position: absolute;
+    bottom: 0;
+    border: 3px solid #00317D;
+    content: "";
+    width: 105%;
+}
+
+.header-top-menu ul li,
+.navbar ul li {
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.header-top-menu ul li a,
+.navbar ul li a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #9b9b9b;
+    line-height: 25px;
+    color: #fff;
+    font-weight: 600;
+    text-transform: capitalize;
+    transition: 0.5s;
+    padding: 15px;
+    display: block;
+    transform-style: flat;
+    -webkit-transform-style: flat;
+    -moz-transformtransform-style: flat;
+    -ms-transform-style: flat;
+    transform: rotate(0deg) scale(1.003) skew(26deg) translate(0px);
+    -webkit-transform: rotate(0deg) scale(1.003) skew(26deg) translate(0px);
+    -moz-transform: rotate(0deg) scale(1.003) skew(26deg) translate(0px);
+    -o-transform: rotate(0deg) scale(1.003) skew(26deg) translate(0px);
+    -ms-transform: rotate(0deg) scale(1.003) skew(26deg) translate(0px);
+}
+
+.header-top-menu ul li:hover,
+.navbar ul li:hover,
+li.menu-active {
+    background-color: #00317D !important;
+    color: #fff !important;
+}
+
+/******** menu part end ********/
+
+.hour {
+    float: right;
+    margin: 30px 0 0;
+}
+
+.hour img {
+    width: 100px;
+}
+
+.navbar {
+    position: relative;
+}
+
+.navbar::before {
+    position: absolute;
+    top: -1px;
+    left: 0;
+    content: "";
+    background-color: #00317D;
+    width: 23%;
+    height: 70px;
+    transform: rotate(0deg) scale(1.003) skew(-26deg) translate(0px);
+    -webkit-transform: rotate(0deg) scale(1.003) skew(-26deg) translate(0px);
+    -moz-transform: rotate(0deg) scale(1.003) skew(-26deg) translate(0px);
+    -o-transform: rotate(0deg) scale(1.003) skew(-26deg) translate(0px);
+    -ms-transform: rotate(0deg) scale(1.003) skew(-26deg) translate(0px);
+}
+
+.navbar ul {
+    display: flex;
+    float: left;
+    left: 40px;
+}
+
+.navbar ul li a {
+    padding: 30px 45px !important;
+    font-size: 14px;
+}
+
+.navbar ul li {
+    border-right: 2px solid #434343;
+    transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.navbar ul li:last-child {
+    border: 0;
+}
+
+.hot-news {
+    transform: rotate(0deg) scale(1.003) skew(26deg) translate(0px);
+    -webkit-transform: rotate(0deg) scale(1.003) skew(26deg) translate(0px);
+    -moz-transform: rotate(0deg) scale(1.003) skew(26deg) translate(0px);
+    -o-transform: rotate(0deg) scale(1.003) skew(26deg) translate(0px);
+    -ms-transform: rotate(0deg) scale(1.003) skew(26deg) translate(0px);
+}
+
+.hot-news {
+    float: left;
+    margin-top: 30px;
+}
+
+.hot-news h5 {
+    font-family: 'Fjalla One', sans-serif;
+    color: #fff;
+    display: inline-block;
+    float: left;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #00317D;
+}
+
+.hot-news h5 a {
+    color: #fff;
+    display: block;
+    padding: 5px 10px;
+}
+
+.marquee {
+    box-sizing: border-box;
+    color: #fff;
+    float: left;
+    margin: 22px;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 200px;
+    animation: marquee 50s linear infinite;
+}
+
+.marquee a {
+    color: #fff;
+}
+
+.hot-news h5 a,
+.marquee {
+
+    display: block;
+    transform-style: flat;
+    -webkit-transform-style: flat;
+    -moz-transformtransform-style: flat;
+    -ms-transform-style: flat;
+    transform: rotate(0deg) scale(1.003) skew(-26deg) translate(0px);
+    -webkit-transform: rotate(0deg) scale(1.003) skew(-26deg) translate(0px);
+    -moz-transform: rotate(0deg) scale(1.003) skew(-26deg) translate(0px);
+    -o-transform: rotate(0deg) scale(1.003) skew(-26deg) translate(0px);
+    -ms-transform: rotate(0deg) scale(1.003) skew(-26deg) translate(0px);
+}
+
+/*  ================================
+        Header area end
+    ================================ */
+
+/*  ================================
+        product area start
+    ================================ */
+
+.product-area {
+    padding: 80px 0;
+}
+
+.sidebar-box {
+    border: 1px solid #D1D1D1;
+    text-align: center;
+    padding: 0 0 10px;
+    margin-bottom: 20px;
+}
+
+.sidebar-box h3 {
+    font-size: 16px;
+    text-align: center;
+    padding: 10px;
+    background-color: #F2F2F2;
+    margin-bottom: 15px;
+}
+
+.sidebar-box img {
+    width: 200px;
+}
+
+.product-wraper {
+    border: 1px solid #D1D1D1;
+    overflow: hidden;
+    padding: 40px 20px;
+}
+
+.product-dec h3 {
+    font-family: 'Raleway', sans-serif;
+    color: #37474f;
+    font-size: 22px;
+    margin: 0 0 15px;
+}
+
+.product-dec h4 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    color: #1a1a1a;
+    font-size: 17px;
+    line-height: 1.3;
+    margin-bottom: 10px;
+}
+
+.product-dec p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+/*  ================================
+        product area end
+    ================================ */
+
+/*  ================================
+        tab area start
+    ================================ */
+
+.tab-part-area {
+    padding: 80px 0;
+    background: rgba(0, 0, 0, 0) url("../img/banner.jpg") no-repeat scroll 0 0 / cover;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.tab-part-area::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+section.tab-section {
+    display: none;
+    padding: 40px 45px;
+    border: 1px solid #ccc;
+    color: #1a1a1a;
+    overflow: hidden;
+    font-family: 'Open Sans', sans-serif;
+    background: #fff;
+}
+
+.tab-part-area input {
+    display: none;
+}
+
+.tab-part-area label {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    display: inline-block !important;
+    color: #00317D;
+    background: none repeat scroll 0 0 #ffffff;
+    border: 1px solid #dfdfdf;
+    display: block;
+    height: 80px;
+    line-height: 50px;
+    margin-bottom: 20px;
+    margin-left: 25px;
+    padding: 14px 10px 10px;
+    position: relative;
+    text-align: center;
+    width: 20%;
+    transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    transform-style: flat;
+    -webkit-transform-style: flat;
+    -moz-transformtransform-style: flat;
+    -ms-transform-style: flat;
+    transform: rotate(0deg) scale(1.003) skew(-14deg) translate(0px);
+    -webkit-transform: rotate(0deg) scale(1.003) skew(-26deg) translate(0px);
+    -moz-transform: rotate(0deg) scale(1.003) skew(-26deg) translate(0px);
+    -o-transform: rotate(0deg) scale(1.003) skew(-26deg) translate(0px);
+    -ms-transform: rotate(0deg) scale(1.003) skew(-26deg) translate(0px);
+}
+
+.tab-part-area label:hover {
+    background-color: #00317D;
+    color: #fff;
+}
+
+.tab-part-area label span {
+    font-size: 15px;
+    display: block;
+    transform: rotate(0deg) scale(1.003) skew(14deg) translate(0px);
+    -webkit-transform: rotate(0deg) scale(1.003) skew(26deg) translate(0px);
+    -moz-transform: rotate(0deg) scale(1.003) skew(26deg) translate(0px);
+    -o-transform: rotate(0deg) scale(1.003) skew(26deg) translate(0px);
+    -ms-transform: rotate(0deg) scale(1.003) skew(26deg) translate(0px);
+}
+
+.tab-part-area label:hover {
+    cursor: pointer;
+}
+
+.tab-part-area input:checked + label {
+    color: #fff;
+    border: 1px solid #00317D;
+    background-color: #00317D;
+}
+
+
+
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3,
+#tab4:checked ~ #content4 {
+    display: block;
+}
+
+.tab-part-area section > p {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.tab-part-area section li {
+    font-size: 15px;
+    padding: 5px 0;
+}
+
+.tab-section h3 {
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #3a3a3a;
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+}
+
+.tab-section p {
+    font-size: 14px;
+    color: #3D3D3D;
+    font-weight: 500;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.tab-section h2 {
+    color: #3D3D3D;
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.tab-section p a {
+    color: #00317D;
+    font-weight: 600;
+    text-decoration: underline;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.tab-section p:last-child {
+    margin-bottom: 0;
+}
+
+.product-dec ul {
+    margin-bottom: 20px;
+}
+
+.tab-list ul li,
+.product-dec ul li {
+    list-style: none;
+    padding: 5px 20px;
+    position: relative;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.tab-list ul li::before,
+.product-dec ul li::before {
+    position: absolute;
+    content: "\f00c";
+    font-family: fontawesome;
+    left: 0;
+    color: #00317D;
+}
+
+video.responsive-video {
+    width: 100%;
+}
+
+/*  ================================
+        tab area end
+    ================================ */
+
+/*  ================================
+        Fetured Part Area
+    ================================ */
+
+.fetured-area {
+    padding: 80px 0;
+}
+
+.featured-title h3 {
+    color: #010101;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.featured-title hr {
+    background-color: #00317D;
+    border: medium none;
+    display: inline-block;
+    margin: 20px 0 60px 0;
+    padding: 3px;
+    position: relative;
+    width: 130px;
+    transform: rotate(0deg) scale(1.003) skew(-14deg) translate(0px);
+    -webkit-transform: rotate(0deg) scale(1.003) skew(-14deg) translate(0px);
+    -moz-transform: rotate(0deg) scale(1.003) skew(-14deg) translate(0px);
+    -o-transform: rotate(0deg) scale(1.003) skew(-14deg) translate(0px);
+    -ms-transform: rotate(0deg) scale(1.003) skew(-14deg) translate(0px);
+}
+
+.featured-title hr::before {
+    border-left: 4px solid #fff;
+    border-right: 4px solid #fff;
+    content: "";
+    height: 30px;
+    left: 11px;
+    position: absolute;
+    top: -10px;
+    width: 110px;
+    transform: rotate(0deg) scale(1.003) skew(-14deg) translate(0px);
+    -webkit-transform: rotate(0deg) scale(1.003) skew(-14deg) translate(0px);
+    -moz-transform: rotate(0deg) scale(1.003) skew(-14deg) translate(0px);
+    -o-transform: rotate(0deg) scale(1.003) skew(-14deg) translate(0px);
+    -ms-transform: rotate(0deg) scale(1.003) skew(-14deg) translate(0px);
+}
+
+.featured-title hr::after {
+    background: none repeat scroll 0 0 #000;
+    border: 3px solid #fff;
+    content: "";
+    height: 20px;
+    left: 59px;
+    padding: 0;
+    position: absolute;
+    top: -7px;
+    width: 20px;
+    transform: rotate(0deg) scale(1.003) skew(-14deg) translate(0px);
+    -webkit-transform: rotate(0deg) scale(1.003) skew(-14deg) translate(0px);
+    -moz-transform: rotate(0deg) scale(1.003) skew(-14deg) translate(0px);
+    -o-transform: rotate(0deg) scale(1.003) skew(-14deg) translate(0px);
+    -ms-transform: rotate(0deg) scale(1.003) skew(-14deg) translate(0px);
+}
+
+.item-gallery {
+    padding: 80px 0 0;
+}
+
+/*  ================================
+        Footer Part Area
+    ================================ */
+
+.footer-area {
+    position: relative;
+    padding: 50px 0 0;
+    background: rgba(0, 0, 0, 0) url("../img/background.jpg") repeat;
+}
+
+.footer-logo {
+    margin-top: 30px;
+}
+
+.footer-widget h3 {
+    margin-bottom: 60px;
+    font-size: 18px;
+    margin-top: 89px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.title-line {
+    background: none repeat scroll 0 0 #00317D;
+    left: 266px;
+    padding: 20px;
+    position: absolute;
+    top: 80px;
+    width: 75%;
+    transform: rotate(0deg) scale(1.003) skew(-26deg) translate(0px);
+    -webkit-transform: rotate(0deg) scale(1.003) skew(-26deg) translate(0px);
+    -moz-transform: rotate(0deg) scale(1.003) skew(-26deg) translate(0px);
+    -o-transform: rotate(0deg) scale(1.003) skew(-26deg) translate(0px);
+    -ms-transform: rotate(0deg) scale(1.003) skew(-26deg) translate(0px);
+}
+
+.title-line::after {
+    content: "";
+    left: 25px;
+    padding: 3px;
+    position: absolute;
+    top: 39px;
+    background-color: #010101;
+    width: 85%;
+    transform: rotate(0deg) scale(1.003) skew(-26deg) translate(0px);
+    -webkit-transform: rotate(0deg) scale(1.003) skew(-26deg) translate(0px);
+    -moz-transform: rotate(0deg) scale(1.003) skew(-26deg) translate(0px);
+    -o-transform: rotate(0deg) scale(1.003) skew(-26deg) translate(0px);
+    -ms-transform: rotate(0deg) scale(1.003) skew(-26deg) translate(0px);
+}
+
+.footer-widget ul li {
+    width: 100%;
+    line-height: 24px;
+    margin: 0 0 7px;
+
+    list-style: none;
+    position: relative;
+    padding-left: 20px;
+    color: #010101;
+}
+
+.footer-widget ul li::before {
+    position: absolute;
+    left: 0;
+    content: "\f105";
+    font-family: fontawesome;
+    color: #00317D;
+}
+
+.footer-widget ul li a {
+    color: #010101;
+    text-transform: capitalize;
+    font-weight: 700;
+    transition: 0.5s;
+    font-size: 14px;
+}
+
+.footer-widget ul li a:hover {
+    color: #00317D;
+}
+
+.footer-widget h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 56px;
+    font-weight: 600;
+}
+
+.footer-widget span {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.sub-btn {
+    border: 1px solid #00317D;
+    color: #00317D !important;
+    text-transform: uppercase !important;
+    padding: 10px 20px;
+
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-top: 20px !important;
+    margin-bottom: 0 !important;
+    display: inline-block;
+}
+
+.main-footer {
+    background: none repeat scroll 0 0 #010101;
+    margin: 80px 0 30px;
+    padding: 30px 0;
+    position: relative;
+}
+
+.main-footer::before {
+    position: absolute;
+    top: -8px;
+    left: 30%;
+    content: "";
+    width: 40%;
+    height: 9px;
+    background-color: #00317D;
+    transform: rotate(0deg) scale(1.003) skew(26degdeg) translate(0px);
+    -webkit-transform: rotate(0deg) scale(1.003) skew(26deg) translate(0px);
+    -moz-transform: rotate(0deg) scale(1.003) skew(26deg) translate(0px);
+    -o-transform: rotate(0deg) scale(1.003) skew(26deg) translate(0px);
+    -ms-transform: rotate(0deg) scale(1.003) skew(26deg) translate(0px);
+}
+
+.main-footer::after {
+    position: absolute;
+    bottom: -8px;
+    left: 30%;
+    content: "";
+    width: 40%;
+    height: 9px;
+    background-color: #00317D;
+    transform: rotate(0deg) scale(1.003) skew(-26deg) translate(0px);
+    -webkit-transform: rotate(0deg) scale(1.003) skew(-26deg) translate(0px);
+    -moz-transform: rotate(0deg) scale(1.003) skew(-26deg) translate(0px);
+    -o-transform: rotate(0deg) scale(1.003) skew(-26deg) translate(0px);
+    -ms-transform: rotate(0deg) scale(1.003) skew(-26deg) translate(0px);
+}
+
+.copy-right p {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    text-transform: capitalize;
+}

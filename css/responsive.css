@@ -1,0 +1,291 @@
+/***** medium Layout *****/
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .title-line {
+        left: 210px;
+    }
+    .navbar ul li a {
+        padding: 30px 40px !important;
+    }
+}
+
+/***** Tablet Layout *****/
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    body {
+        font-size: 12px;
+    }
+    .navbar ul li a {
+        padding: 25px !important;
+        font-size: 13px;
+    }
+    .hour {
+        margin: 32px 0 0;
+    }
+    .header-area {
+        height: 350px;
+    }
+    .product-dec {
+        margin-top: 50px;
+    }
+    .title-line {
+        display: none;
+    }
+    .footer-widget h3 {
+        color: #010101;
+        margin-top: 0;
+        margin-bottom: 15px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #0191F4;
+        display: inline-block;
+    }
+    .footer-logo {
+        margin: 0 auto 30px;
+        float: inherit;
+    }
+    .logo-center {
+        text-align: center;
+    }
+    .footer-widget {
+        margin-bottom: 50px;
+        overflow: hidden;
+    }
+    .footer-widget h4 {
+        font-size: 16px;
+        margin-bottom: 10px;
+        margin-top: 0;
+        font-weight: 600;
+    }
+    .main-footer {
+        margin: 50px 0 70px;
+    }
+}
+
+/***** Mobile Layout *****/
+
+@media only screen and (max-width: 767px) {
+    body {
+        font-size: 12px;
+    }
+    /* menu start */
+    .navbar-header > label,
+    .switch,
+    .menu-container label {
+        display: block;
+    }
+    .navbar {
+        display: none;
+        top: 0 !important;
+    }
+    #menu-switcher:checked + .navbar {
+        display: block;
+    }
+    .menu-container {
+        padding: 0;
+    }
+    .navbar::before {
+        display: none;
+    }
+    .navbar ul {
+        width: 100% !important;
+        display: inline-block;
+    }
+    .navbar ul li {
+        width: 100%;
+        float: left;
+        margin: 0 !important;
+        text-align: left;
+    }
+    .navbar ul li a {
+        color: #fff;
+        padding: 10px 35px !important;
+        display: block;
+    }
+    .navbar {
+        width: 100%;
+        float: left;
+        height: auto;
+        position: absolute;
+        top: 33px !important;
+        z-index: 999;
+        left: 0;
+    }
+    .navbar-header > label,
+    .switch,
+    .menu-container label {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 5px;
+    }
+    .navbar ul,
+    .navbar ul li a {
+        transform: none;
+        -webkit-transform: none;
+        -moz-transform: none;
+        -o-transform: none;
+        -ms-transform: none;
+        left: 0;
+    }
+    /* menu end */
+    .csslider ul li img {
+        width: 100%;
+        height: auto;
+    }
+    .navigation {
+        display: none;
+    }
+    .csslider.infinity > input:first-of-type:checked ~ .arrows label.goto-last,
+    .csslider > input:nth-of-type(1):checked ~ .arrows > label:nth-of-type(0),
+    .csslider > input:nth-of-type(2):checked ~ .arrows > label:nth-of-type(1),
+    .csslider > input:nth-of-type(3):checked ~ .arrows > label:nth-of-type(2),
+    .csslider > input:nth-of-type(4):checked ~ .arrows > label:nth-of-type(3),
+    .csslider > input:nth-of-type(5):checked ~ .arrows > label:nth-of-type(4),
+    .csslider > input:nth-of-type(6):checked ~ .arrows > label:nth-of-type(5),
+    .csslider > input:nth-of-type(7):checked ~ .arrows > label:nth-of-type(6),
+    .csslider > input:nth-of-type(8):checked ~ .arrows > label:nth-of-type(7),
+    .csslider > input:nth-of-type(9):checked ~ .arrows > label:nth-of-type(8),
+    .csslider > input:nth-of-type(10):checked ~ .arrows > label:nth-of-type(9),
+    .csslider > input:nth-of-type(11):checked ~ .arrows > label:nth-of-type(10) {
+        left: -14px;
+    }
+    .csslider.infinity > input:last-of-type:checked ~ .arrows label.goto-first,
+    .csslider > input:nth-of-type(1):checked ~ .arrows > label:nth-of-type(2),
+    .csslider > input:nth-of-type(2):checked ~ .arrows > label:nth-of-type(3),
+    .csslider > input:nth-of-type(3):checked ~ .arrows > label:nth-of-type(4),
+    .csslider > input:nth-of-type(4):checked ~ .arrows > label:nth-of-type(5),
+    .csslider > input:nth-of-type(5):checked ~ .arrows > label:nth-of-type(6),
+    .csslider > input:nth-of-type(6):checked ~ .arrows > label:nth-of-type(7),
+    .csslider > input:nth-of-type(7):checked ~ .arrows > label:nth-of-type(8),
+    .csslider > input:nth-of-type(8):checked ~ .arrows > label:nth-of-type(9),
+    .csslider > input:nth-of-type(9):checked ~ .arrows > label:nth-of-type(10),
+    .csslider > input:nth-of-type(10):checked ~ .arrows > label:nth-of-type(11),
+    .csslider > input:nth-of-type(11):checked ~ .arrows > label:nth-of-type(12) {
+        right: -14px;
+    }
+    .featured-title h3 {
+        font-size: 20px;
+    }
+    .product-slider {
+        width: 100%;
+        float: none;
+    }
+    .ex {
+        margin: 0;
+        padding: 0;
+    }
+    .tab-part-area label {
+        height: 50px;
+        line-height: 16px;
+        padding: 14px 10px 10px;
+        width: 100%;
+        margin: 0;
+    }
+    section.tab-section {
+        margin-top: 30px;
+    }
+    section.tab-section {
+        padding: 30px 10px;
+    }
+    .product-dec {
+        margin-top: 30px;
+    }
+    .title-line {
+        display: none;
+    }
+    .logo::after {
+        height: 18px;
+        left: 10px;
+        bottom: -12px;
+    }
+    .logo,
+    .footer-logo {
+        margin: 0 auto 30px;
+        float: inherit;
+    }
+    .header-logo,
+    .logo-center {
+        text-align: center;
+    }
+    .footer-widget h3 {
+        color: #010101;
+        margin-top: 0;
+        margin-bottom: 15px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #0191F4;
+        display: inline-block;
+    }
+    .footer-widget {
+        margin-bottom: 50px;
+    }
+    .footer-widget h4 {
+        font-size: 16px;
+        margin-bottom: 10px;
+        margin-top: 0;
+        font-weight: 600;
+    }
+    .main-footer {
+        margin: 50px 0 70px;
+    }
+    .hour {
+        margin: -30px 0 0;
+    }
+    .hour img {
+        width: 50px;
+    }
+    .header-top-menu ul li a,
+    .navbar ul li a {
+        padding: 11px;
+        font-size: 12px;
+    }
+    .product-dec h3 {
+        font-size: 16px;
+    }
+    .footer-widget h4,
+    .product-dec h4 {
+        font-size: 13px;
+    }
+    .sub-btn,
+    .copy-right p,
+    .footer-widget ul li a,
+    .tab-part-area label span,
+    .hour span,
+    .product-dec p,
+    .tab-section p,
+    .tab-list ul li,
+    .product-dec ul li {
+        font-size: 12px;
+    }
+    .footer-widget h3,
+    .tab-section h3 {
+        font-size: 15px;
+    }
+    .csslider > .navigation {
+        display: none;
+        margin: 20px 0;
+        text-align: center;
+    }
+    .csslider > ul {
+        width: auto;
+    }
+    .csslider ul li img {
+        height: auto;
+        width: auto;
+        margin-bottom: 30px;
+    }
+    .cross-sell-gallery-item-description p {
+        font-size: 14px !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    .cross-sell-gallery-item-description {
+        width: 100% !important;
+        padding: 20px !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+}
+
+/***** Wide Mobile Layout *****/
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {}
